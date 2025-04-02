@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    const colorLinks = document.querySelectorAll('.color');
+    const colorLinks = document.querySelectorAll('.color[data-text-color]');
     colorLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    const bgLinks = document.querySelectorAll('.bg_color');
+    const bgLinks = document.querySelectorAll('.color[data-bg-color]');
     bgLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
